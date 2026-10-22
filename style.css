@@ -1,0 +1,130 @@
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    background-color: burlywood;
+    margin: 0;
+    padding: 20px;
+    color: #263326;
+}
+
+main {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.step {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.step:hover {
+    background-color: lightgreen;
+}
+
+.step:focus-visible,
+.back-button:focus-visible {
+    outline: 3px solid #245c24;
+    outline-offset: 3px;
+}
+
+.hero-image {
+    max-width: 65%;
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.intro {
+    text-align: center;
+}
+
+.steps {
+    display: grid;
+    gap: 14px;
+}
+
+.step-number,
+.step-title,
+.step-summary {
+    display: block;
+}
+
+.step-number {
+    color: #426342;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.step-title {
+    margin: 4px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.step-image {
+    display: block;
+    width: min(100%, 250px);
+    height: auto;
+    margin: 10px 0;
+}
+
+.back-button {
+    padding: 10px 14px;
+    border: 1px solid #526b52;
+    border-radius: 6px;
+    background: white;
+    color: #263326;
+    font: inherit;
+    cursor: pointer;
+}
+
+.detail-card {
+    margin-top: 16px;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+}
+
+.detail-image {
+    display: block;
+    width: min(100%, 350px);
+    height: auto;
+    margin: 12px auto;
+}
+
+.detail-card li {
+    margin: 8px 0;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (min-width: 650px) {
+    .steps {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .step-image {
+        margin-top: auto;
+        padding-top: 10px;
+    }
+}

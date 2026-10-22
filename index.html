@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Save Trees</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <section id="step-list" aria-labelledby="page-title">
+                <h1 id="page-title">Save Trees</h1>
+                <p class="intro">Choose a step to learn how you can help protect trees.</p>
+                <div class="steps">
+                    <button class="step" type="button" data-step="paper-use">
+                        <span class="step-number">Step 1</span>
+                        <span class="step-title">Reduce Paper Usage</span>
+                        <img src="tree.jpg" alt="A leafy tree" class="step-image">
+                        <span class="step-summary">Use digital documents instead of printing.</span>
+                    </button>
+                    <button class="step" type="button" data-step="recycle-paper">
+                        <span class="step-number">Step 2</span>
+                        <span class="step-title">Recycle Paper</span>
+                        <img src="paper.jpg" alt="" class="step-image">
+                        <span class="step-summary">Recycle paper products to reduce waste.</span>
+                    </button>
+                    <button class="step" type="button" data-step="plant-trees">
+                        <span class="step-number">Step 3</span>
+                        <span class="step-title">Plant Trees</span>
+                        <img src="treeplant.jpg.jpg" alt="" class="step-image">
+                        <span class="step-summary">Help replenish forests by planting trees.</span>
+                    </button>
+                </div>
+            </section>
+
+            <section id="step-detail" aria-labelledby="detail-title" hidden>
+                <button id="back-button" class="back-button" type="button">Back to steps</button>
+                <article class="detail-card">
+                    <h1 id="detail-title"></h1>
+                    <div id="detail-content"></div>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
